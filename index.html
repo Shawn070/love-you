@@ -102,6 +102,10 @@
 			}, 5000);
 
 			timeElapse(together);
+			
+			setInterval(function () {
+                    		timeElapse(together);
+                		}, 500);
 
 			adjustCodePosition();
 			$("#code").typewriter(); // 打字效果
